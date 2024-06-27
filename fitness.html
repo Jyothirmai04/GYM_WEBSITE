@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM FITNESS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  .btn{
+    position: relative;
+    left: 200px;
+}
+@media screen and (max-width:600px){
+    .btn{
+      display: none;
+    }
+  }
+</style>
+<body>
+<!--navbar-->
+<nav class="bg-gray-900 border-gray-200 dark:bg-gray-900 md:h-[80px] ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between  px-2 ">
+      <img src="logo.png" class="h-16 mr-6 lg:h-24">
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-20 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg hidden:bg-black md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700  md:pb-2">
+          <li>
+            <a href="#" class="block py-2 px-3 text-white hover:bg-cyan-600  rounded md:hover:bg-transparent md:text-cyan-400 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-cyan-600 md:hover:bg-transparent md:border-0 md:hover:text-cyan-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-cyan-600 md:hover:bg-transparent md:border-0 md:hover:text-cyan-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">SERVICES</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-cyan-600 md:hover:bg-transparent md:border-0 md:hover:text-cyan-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PACKAGES</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-cyan-600 md:hover:bg-transparent md:border-0 md:hover:text-cyan-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">TIMINGS</a>
+          </li>
+          <li class="ml-48">
+            <button class=" btn text-white bg-cyan-600 rounded-full h-10 w-32 ml-28 hover:bg-cyan-700"> Register</button>
+           
+         </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--main-->
+  <main> 
+    <!--home-page-->
+    <section class="">
+      <div class="md:flex flex-row md:my-16 bg-gradient-to-r from-zinc-950 to-gray-700">
+      <img src="fitness1.png" class="mr-10 md:flex-1 md:order-2">
+      <div class="md:flex-1 md:order-1  md:mt-28 md:ml-8">
+      <h1 class="text-white text-4xl font-bold text-center leading-normal mt-8 md:text-5xl">DISCOVER YOUR <span>POTENTIAL</span></h1>
+      <p class="text-white text-sm p-4 text-center leading-loose tracking-wide md:px-8 md:mt-4 ">Physical fitness is the ability of your body to function properly and efficiently so that you can be healthy enough to perform all the activities of your living.Fitness is an ability to execute daily functional activities with optimal performance, endurance, and strength to manage minimalist of disease, fatigue, stress and reduced sedentary behavior. </p>
+      <button class="text-white bg-cyan-600 rounded-full h-10 w-32 ml-32 my-4 font-medium md:ml-64 hover:bg-cyan-700 ">Register Now</button>
+      </div>
+      </div>
+    </section>
+    <p class="h-1 bg-gray-900 mb-10"></p>
+    <!--services-->
+    <section>
+      <h1 class="text-white text-3xl font-medium text-center md:text-4xl md:font-bold">OUR SERVICES</h1>
+            <div class="flex flex-col gap-4 m-4 mt-10 md:my-20 md:grid grid-cols-3 md:ml-24">
+            <div class="bg-gray-300 h-56 w-80 border-4 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.5)] shadow-2xl md:mb-20 hover:box-content">
+              <img src="https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2018/11/Group-Fitness-Class-Performing-A-Variety-Of-Exercises-1.jpg?quality=86&strip=all">
+              <p class="font-bold text-center mt-2">PHYSICAL FITNESS</p>
+              
+            </div>
+            <div class="bg-gray-300 h-56 w-80 border-4 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.5)] shadow-2xl md:mb-20 hover:box-content">
+              <img src="https://www.healthkart.com/connect/wp-content/uploads/2022/05/900x500_thumbnail_HK-Connect_Squats-for-weight-gain.png">
+              <p class="font-bold text-center mt-2">WEIGHT GAIN</p>
+            </div>
+            <div class="bg-gray-300 h-56 w-80 border-4 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.5)] shadow-2xl md:mb-20 hover:box-content">
+              <img src="https://generationiron.com/wp-content/uploads/2020/05/The-Top-5-Best-Fat-Burners-for-Bodybuilding-2020-696x369.jpg"class="h-[175px]">
+              <p class="font-bold text-center mt-2">STRENGTH TRAINING</p>
+            </div> 
+            <div class="bg-gray-300 h-56 w-80 border-4 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.5)] shadow-2xl hover:box-content">
+              <img src="https://i0.wp.com/fitonapp.com/wp-content/uploads/shutterstock_1921447928.jpg?resize=720%2C480&ssl=1" class="h-[176px] w-[400px]">
+              <p class="font-bold text-center mt-2">FAT LOSS</p>
+            </div>
+            <div class="bg-gray-300 h-56 w-80 border-4 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.5)] shadow-2xl hover:box-content">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-tpRykdOhHnN2_557LTkjea7SVYBwp3Lhw&s" class="h-[176px] w-[400px]">
+              <p class="font-bold text-center mt-2">WEIGHTLIFTING</p>
+            </div>
+            <div class="bg-gray-300 h-56 w-80 border-4 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.5)] shadow-2xl hover:box-content">
+              <img src="https://www.health.com/thmb/h_pCnDgIXG_ntqk-Odl2gEWYnhE=/724x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1128859388-3b0b4effeaaf495484cc8eb050965bfe.jpg" class="h-[176px] w-[400px]">
+            <p class="font-bold text-center mt-2">TREADMILL</p>
+            </div>
+            </div>
+    </section>
+    <p class="h-1 bg-gray-900 my-10"></p>
+    <!--packages-->
+    <section>
+      <h1 class="text-white text-3xl font-medium text-center md:text-4xl md:font-bold">PACKAGES</h1>
+      <div class="flex flex-col gap-4 m-4 mt-10 md:grid grid-cols-3 md:my-20 md:ml-24">
+        <div class="bg-zinc-950 h-96 w-80 border-2 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] shadow-2xl hover:box-content">
+          <h1 class="text-white text-4xl font-medium text-center mt-2">Basic</h1>
+          <p class="text-cyan-600 text-3xl text-center mt-4">40$/month</p>
+          <ul class="text-white text-xl px-4 mt-4">
+            <li class="mt-2"><i class="fa-regular fa-square-check text-cyan-600"></i> Access to all gym facilities</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> Diet plan Basic</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> 3 Days Personal Trainer Help</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> No Additional Amenities</li>
+          </ul>
+          <button class="bg-cyan-600 text-white text-lg h-10 w-32 mx-20 my-8 hover:bg-cyan-700">Choose Plan</button>
+        </div>
+        <div class="bg-zinc-950 h-96 w-80 border-2 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] shadow-2xl hover:box-content">
+          <h1 class="text-white text-4xl font-medium text-center mt-2">Pro</h1>
+          <p class="text-cyan-600 text-3xl text-center mt-4">69$/month</p>
+          <ul class="text-white text-xl px-4 mt-4">
+            <li class="mt-2"><i class="fa-regular fa-square-check text-cyan-600"></i> Access to all gym facilities</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> Diet plan advanced</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> 45 days Personal Trainer Help</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> Free Supplements + Sauna</li>
+          </ul>
+          <button class="bg-cyan-600 text-white text-lg h-10 w-32 mx-20 my-8 hover:bg-cyan-700">Choose Plan</button>
+        </div>
+        <div class="bg-zinc-950 h-99 w-80 border-2 rounded-lg border-cyan-600 shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] shadow-2xl hover:box-content">
+          <h1 class="text-white text-4xl font-medium text-center mt-2">Premium</h1>
+          <p class="text-cyan-600 text-3xl text-center mt-4">99$/month</p>
+          <ul class="text-white text-xl px-4 mt-4">
+            <li class="mt-2"><i class="fa-regular fa-square-check text-cyan-600"></i> Access to all gym facilities</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> Diet plan advanced</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> 100 days Personal Trainer Help</li>
+            <li class="mt-4"><i class="fa-regular fa-square-check text-cyan-600"></i> Full Access To Everything</li>
+          </ul>
+          <button class="bg-cyan-600 text-white text-lg h-10 w-32 mx-20 my-8 hover:bg-cyan-700">Choose Plan</button>
+        </div>
+      </div>
+    </section>
+    <p class="h-1 bg-gray-900 my-10"></p>
+    <!--Timings-->
+    <section>
+     <h1 class="text-white text-3xl font-medium text-center md:text-4xl md:font-bold">TIMIMGS</h1>
+        <div class="md:flex flex-row md:justify-center md:justify-center md:my-20">
+          <div class="text-white text-center text-lg bg-cyan-600 h-[150px] w-[300px] pt-6 rounded-lg mt-6 ml-10  md:h-[250px] md:w-[500px]">
+           <p class="text-xl font-medium md:text-3xl md:mt-6 underline decoration-gray-50 ">Monday-friday</p>
+           <p class="mt-2 md:text-xl md:mt-8">Morning->6:00PM-10:00PM</p>
+           <p class="mt-2 md:text-xl">Evening-> 5:30PM-9:30PM</p>
+        </div>
+        <div class="text-white text-center text-lg bg-cyan-600 h-[150px] w-[300px] pt-6 rounded-lg mt-6 ml-10 md:h-[250px] md:w-[500px]">
+          <p class="text-xl font-medium md:text-3xl md:mt-6 underline decoration-gray-50 ">Weekends</p>
+          <p class="mt-2 md:text-xl md:mt-8">Morning->7:00PM-10:00PM</p>
+          <p class="mt-2 md:text-xl">Evening->6:30PM-10:30PM</p>
+        </div>
+        </div>
+    </section>
+    <p class="h-1 bg-gray-900 my-10"></p>
+    <!--offers-->
+    <section>
+      <h1 class="text-orange-500 text-4xl text-center font-bold md:text-5xl ">Special Offer</h1>
+      <p class="text-white text-center text-xl mt-4 md:text-2xl md:mt-6">For New Member</p>
+      <p class="text-cyan-600 text-6xl text-center font-bold mt-4">25% OFF</p>
+
+    </section>
+    <p class="h-1 bg-gray-900 mt-10"></p>
+    <!--last-->
+    <div>
+      <img src="logo.png" class="h-48 mx-24 mt-2 md:ml-[650px]">
+      <p class="text-white text-base text-center md:text-xl">www.fitnessclub.com | contact@fitnessclub.com</p>
+      <div class="flex flex-row justify-center my-10 ">
+      <i class="fa-brands fa-facebook fa-xl text-white ml-4"></i>
+      <i class="fa-brands fa-twitter fa-xl text-white ml-4"></i>
+      <i class="fa-brands fa-instagram fa-xl text-white ml-4"></i>
+    </div>
+    </div>
+  </main>
+  <footer class="text-white bg-zinc-950 text-xs text-center p-2 mt-10 md:text-xs">&copy; COPYRIGHT. ALL RIGHTS ARE RESERVED</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> 
+</body>
+</html>
